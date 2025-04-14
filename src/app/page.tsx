@@ -16,7 +16,7 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "John the Wordsmith - Storyteller and Ghost Writer",
+  title: "Michel Brown - Storyteller and Ghost Writer",
   description:
     "I help clients reverse-engineer their career stories and craft narratives for maximum impact.",
 };
@@ -100,7 +100,7 @@ export default function Home() {
                   height={300}
                   className="rounded-full object-cover"
                 />
-                <p className="mt-3 text-4xl font-bold">John Cook</p>
+                <p className="mt-3 text-4xl font-bold">Michel Brown</p>
               </div>
             </div>
           </div>
@@ -289,7 +289,7 @@ export default function Home() {
       </main>
       <footer className="flex w-full shrink-0 flex-col items-center gap-2 border-t border-gray-200 px-4 py-6 dark:border-gray-800 sm:flex-row md:px-6">
         <p className="text-xs text-gray-700 dark:text-gray-300">
-          © 2023 John Doe Storyteller. All rights reserved.
+          © 2023 Michel Brown Storyteller. All rights reserved.
         </p>
         <nav className="flex gap-4 sm:ml-auto sm:gap-6">
           <Link
