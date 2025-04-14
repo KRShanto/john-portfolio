@@ -23,11 +23,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-white dark:bg-gray-950">
-      <header className="flex h-14 items-center border-b border-gray-200 px-4 dark:border-gray-800 lg:px-6">
+    <div className="flex min-h-screen flex-col bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
+      <header className="flex h-14 items-center border-b border-gray-200 bg-white/80 px-4 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-900/80 lg:px-6">
         <Link className="flex items-center justify-center" href="#">
-          <span className="text-lg font-bold text-gray-900 dark:text-gray-100">
-            JOHN THE WORDSMITH
+          <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-lg font-bold text-transparent">
+            MICHEL BROWN
           </span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -69,7 +69,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-x-8 md:space-y-0">
               <div className="flex flex-col items-center space-y-4 text-center md:w-1/2 md:items-start md:text-left">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter text-gray-800 dark:text-gray-100 sm:text-4xl md:text-5xl lg:text-6xl/none">
+                  <h1 className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-3xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-5xl lg:text-6xl/none">
                     Unlock your story
                   </h1>
                   <p className="mx-auto max-w-[700px] text-gray-700 dark:text-gray-200 md:text-xl">
@@ -79,7 +79,7 @@ export default function Home() {
                 </div>
                 <div className="space-x-4">
                   <Link
-                    className="inline-flex h-9 items-center justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-700 disabled:pointer-events-none disabled:opacity-50 dark:bg-green-600 dark:hover:bg-green-700 dark:focus-visible:ring-green-500"
+                    className="inline-flex h-9 items-center justify-center rounded-md bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:from-indigo-700 hover:to-purple-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-indigo-700 disabled:pointer-events-none disabled:opacity-50"
                     href="#contact"
                   >
                     Get in Touch
@@ -107,36 +107,49 @@ export default function Home() {
         </section>
         <section
           id="about"
-          className="w-full bg-gray-100 py-12 dark:bg-gray-900 md:py-24 lg:py-32"
+          className="w-full bg-gradient-to-b from-indigo-50 to-white py-12 dark:from-gray-900 dark:to-gray-950 md:py-24 lg:py-32"
         >
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter text-gray-800 dark:text-gray-100 sm:text-4xl md:text-5xl">
-              About Me
-            </h2>
-            <p className="mt-4 max-w-[700px] text-gray-700 dark:text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              I&rsquo;m a writer and storyteller with over 20 years of
-              experience in the hospital & health care industry. My background
-              as a Senior Technical Writer specializing in medical devices has
-              honed my skills in bridging the gap between technical experts and
-              end-users.
-            </p>
-            <p className="mt-4 max-w-[700px] text-gray-700 dark:text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              My ADHD superpower of hyper-focus gives me an extra gear, allowing
-              me to dive deep into complex narratives and emerge with clear,
-              impactful stories.
-            </p>
+            <div className="grid gap-8 md:grid-cols-2">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tighter text-gray-800 dark:text-gray-100 sm:text-4xl md:text-5xl">
+                  About Me
+                </h2>
+                <p className="mt-4 max-w-[700px] text-gray-700 dark:text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  I&rsquo;m a writer and storyteller with over 20 years of
+                  experience in the hospital & health care industry. My
+                  background as a Senior Technical Writer specializing in
+                  medical devices has honed my skills in bridging the gap
+                  between technical experts and end-users.
+                </p>
+                <p className="mt-4 max-w-[700px] text-gray-700 dark:text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  My ADHD superpower of hyper-focus gives me an extra gear,
+                  allowing me to dive deep into complex narratives and emerge
+                  with clear, impactful stories.
+                </p>
+              </div>
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/fullbody.png"
+                  alt="Michel Brown - Professional Storyteller"
+                  width={400}
+                  height={600}
+                  className="rounded-lg object-cover shadow-lg"
+                />
+              </div>
+            </div>
           </div>
         </section>
         <section id="services" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h2 className="mb-8 text-3xl font-bold tracking-tighter text-gray-800 dark:text-gray-100 sm:text-4xl md:text-5xl">
+            <h2 className="mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-3xl font-bold tracking-tighter text-transparent sm:text-4xl md:text-5xl">
               Services
             </h2>
             <div className="grid gap-6 lg:grid-cols-3">
-              <Card className="border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950">
+              <Card className="border-gray-200 bg-white shadow-lg transition-all hover:shadow-xl dark:border-gray-800 dark:bg-gray-950">
                 <CardContent className="pt-6">
                   <div className="flex items-center space-x-4">
-                    <PenTool className="h-8 w-8 text-gray-700 dark:text-gray-300" />
+                    <PenTool className="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
                     <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">
                       Career Story Crafting
                     </h3>
@@ -147,10 +160,10 @@ export default function Home() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950">
+              <Card className="border-gray-200 bg-white shadow-lg transition-all hover:shadow-xl dark:border-gray-800 dark:bg-gray-950">
                 <CardContent className="pt-6">
                   <div className="flex items-center space-x-4">
-                    <BookOpen className="h-8 w-8 text-gray-700 dark:text-gray-300" />
+                    <BookOpen className="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
                     <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">
                       Ghost Writing
                     </h3>
@@ -161,10 +174,10 @@ export default function Home() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950">
+              <Card className="border-gray-200 bg-white shadow-lg transition-all hover:shadow-xl dark:border-gray-800 dark:bg-gray-950">
                 <CardContent className="pt-6">
                   <div className="flex items-center space-x-4">
-                    <MessageSquare className="h-8 w-8 text-gray-700 dark:text-gray-300" />
+                    <MessageSquare className="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
                     <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">
                       Narrative Consulting
                     </h3>
@@ -180,7 +193,7 @@ export default function Home() {
         </section>
         <section
           id="testimonials"
-          className="w-full bg-gray-100 py-12 dark:bg-gray-900 md:py-24 lg:py-32"
+          className="w-full bg-gradient-to-b from-indigo-50 to-white py-12 dark:from-gray-900 dark:to-gray-950 md:py-24 lg:py-32"
         >
           <div className="container px-4 md:px-6">
             <h2 className="mb-8 text-3xl font-bold tracking-tighter text-gray-800 dark:text-gray-100 sm:text-4xl md:text-5xl">
@@ -215,7 +228,7 @@ export default function Home() {
         </section>
         <section
           id="contact"
-          className="w-full bg-gray-100 py-12 dark:bg-gray-900 md:py-24 lg:py-32"
+          className="w-full bg-gradient-to-b from-indigo-50 to-white py-12 dark:from-gray-900 dark:to-gray-950 md:py-24 lg:py-32"
         >
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2">
@@ -276,7 +289,7 @@ export default function Home() {
                     className="border-gray-200 bg-white focus-visible:ring-green-500 focus-visible:ring-offset-0 dark:border-gray-800 dark:bg-gray-950"
                   />
                   <Button
-                    className="w-full bg-green-600 text-white hover:bg-green-700 dark:bg-green-600 dark:hover:bg-green-700"
+                    className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-700 hover:to-purple-700 dark:from-indigo-600 dark:to-purple-600 dark:hover:from-indigo-700 dark:hover:to-purple-700"
                     type="submit"
                   >
                     Send Message
@@ -287,7 +300,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex w-full shrink-0 flex-col items-center gap-2 border-t border-gray-200 px-4 py-6 dark:border-gray-800 sm:flex-row md:px-6">
+      <footer className="flex w-full shrink-0 flex-col items-center gap-2 border-t border-gray-200 bg-white/80 px-4 py-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-900/80 sm:flex-row md:px-6">
         <p className="text-xs text-gray-700 dark:text-gray-300">
           © 2023 Michel Brown Storyteller. All rights reserved.
         </p>
